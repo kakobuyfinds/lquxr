@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>GTBuy spreadsheet – Kategorien, QC-Fotos &amp; Versand</title>
+  <meta name="description" content="Deutschsprachiger GTBuy spreadsheet Leitfaden mit CAFANS-Kategorien. Lerne, wie du Produktlinks, Größen, QC-Fotos und Versandkosten prüfst.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="GTBuy spreadsheet – Kategorien, QC-Fotos und Versand">
+  <meta property="og:description" content="Schuhe, Kleidung und Accessoires bei CAFANS entdecken und Produktdetails Schritt für Schritt prüfen.">
+  <meta name="theme-color" content="#f7f3ec">
+  <style>
+    :root{color-scheme:light;--paper:#f7f3ec;--ink:#241c32;--muted:#574e62;--accent:#592b80;--panel:#eee4f6;--line:#cfc2d4}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    header{border-bottom:1px solid var(--line)}
+    header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;padding-block:.85rem}
+    header p,figure{margin:0}
+    a{color:var(--accent);text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .brand{font-weight:850;letter-spacing:.08em}
+    .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(1rem,4vw,4rem);align-items:center;padding-block:clamp(1.5rem,4vw,3.5rem)}
+    h1,h2,h3{line-height:1.14;margin:0 0 .65em}
+    h1{font-size:clamp(2.4rem,7vw,5.5rem);letter-spacing:-.065em;margin-bottom:.25em}
+    h1 span{display:block;color:var(--accent)}
+    h2{font-size:clamp(1.55rem,4vw,2.3rem);letter-spacing:-.025em}
+    p{margin:.65rem 0}
+    .lead{max-width:52ch;font-size:1.1rem}
+    .button{display:inline-block;margin-top:.8rem;padding:.65rem 1rem;background:var(--accent);color:#fff;border-radius:.45rem;text-decoration:none;font-weight:700}
+    .button:hover{background:#432060}
+    .hero figure{background:#fff;border:1px solid var(--line);border-radius:1rem;overflow:hidden}
+    img{display:block;width:100%;height:auto}
+    .hero img{aspect-ratio:3/2;object-fit:contain}
+    figcaption{padding:.6rem .8rem;color:var(--muted);font-size:.88rem}
+    section{padding-block:1.6rem;border-top:1px solid var(--line)}
+    .categories,.gallery,.articles{display:grid;gap:.75rem;margin:0;padding:0;list-style:none}
+    .categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr))}
+    .categories a{display:block;height:100%;padding:.65rem .85rem;border:1px solid var(--line);border-radius:.45rem;background:var(--panel);font-weight:700;text-decoration:none}
+    .categories a:hover{text-decoration:underline}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery figure,.articles article{background:#fff;border:1px solid var(--line);border-radius:.75rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#faf9f8}
+    .articles{grid-template-columns:repeat(3,minmax(0,1fr))}
+    article{padding:1rem}
+    .checklist{margin-bottom:0;padding-inline-start:1.4rem}
+    .checklist li+li{margin-top:.45rem}
+    details{border-bottom:1px solid var(--line);padding:.85rem 0}
+    summary{cursor:pointer;font-weight:700}
+    details p{max-width:75ch}
+    footer{background:var(--panel);padding-block:1rem}
+    @media(max-width:44rem){.hero,.articles{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "GTBuy spreadsheet – Kategorien, QC-Fotos und Versand",
+    "inLanguage": "de",
+    "description": "Deutschsprachiger Leitfaden zu CAFANS-Kategorien, Produktlinks, Größen, QC-Fotos und Versandkosten.",
+    "mainEntity": {
+      "@type": "FAQPage",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist ein GTBuy spreadsheet?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Es ist eine Übersicht mit Produktlinks und, je nach Liste, Angaben zu Kategorien, Varianten oder QC-Fotos. Aktuelle Produktdaten prüfst du auf der jeweiligen Angebotsseite."}
+        },
+        {
+          "@type": "Question",
+          "name": "Wohin führen die Links in diesem Leitfaden?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Die Kategorien führen zu den jeweiligen CAFANS-Kategorieseiten. Die übrigen Links öffnen die CAFANS-Startseite."}
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ein QC-Foto die Echtheit eines Markenartikels bestätigen?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Ein QC-Foto zeigt sichtbare Merkmale wie Nähte, Etiketten oder Oberflächen. Für eine Echtheitsprüfung brauchst du zusätzliche Belege, etwa einen nachvollziehbaren Herkunftsnachweis."}
+        },
+        {
+          "@type": "Question",
+          "name": "Wie schätze ich die Versandkosten nach Deutschland?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Vergleiche Angebote für dieselbe Zieladresse, dieselben Paketmaße und dasselbe Gewicht. Prüfe, welches Gewicht der Versanddienst abrechnet und welche Zuschläge in der Schätzung enthalten sind."}
+        }
+      ]
+    }
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/lquxr/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="https://www.cafans.com">CAFANS</a>
+      <p>Deutschsprachiger Einkaufsleitfaden</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>GTBuy <span>spreadsheet</span></h1>
+        <p class="lead">Ein GTBuy spreadsheet bündelt Produktlinks für die erste Suche. Hier findest du den Einstieg in die CAFANS-Kategorien und erfährst, wie du Maße, Angebotsdaten, QC-Fotos und Versandkosten vergleichst.</p>
+        <a class="button" href="https://www.cafans.com">CAFANS-Katalog öffnen</a>
+      </div>
+      <figure>
+        <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793/CW2288_111_A_PREM.jpg?v=637654399803530000" width="900" height="600" alt="Weißer Nike Air Force 1 ’07 in der Seitenansicht" fetchpriority="high" loading="eager">
+        <figcaption>Nike Air Force 1 ’07 · Modellbeispiel für die Schuhauswahl</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="kategorien">
+      <h2 id="kategorien">Produktkategorien</h2>
+      <nav aria-label="CAFANS-Produktkategorien">
+        <ul class="categories">
+          <li><a href="https://cafans.com/category-911-Shoes.html">Schuhe</a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover</a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Jacken</a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts</a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Caps &amp; Mützen</a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Unterwäsche</a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Trikots</a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="modelle">
+      <h2 id="modelle">Worauf es je nach Produkt ankommt</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://es.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-bolso-speedy-35-con-bandolera--M46981_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" alt="Braune Louis Vuitton Speedy mit Monogramm und zwei Tragegriffen" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton Speedy · Taschenmaße und Grifflänge prüfen.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Gucci Baseballcap aus GG-Canvas mit gebogenem Schirm" loading="lazy" decoding="async">
+          <figcaption>Gucci GG-Cap · Kopfumfang und Verschluss prüfen.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/943J605A0554C080_E01-3?%24default_GHC%24=&amp;crop=438%2C150%2C1130%2C1358&amp;wid=480" width="480" height="480" alt="Weißes Dior CD Icon T-Shirt" loading="lazy" decoding="async">
+          <figcaption>Dior CD Icon · Brustweite und Rückenlänge vergleichen.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg?wid=480" width="480" height="480" alt="Hermès Clic H Armreif mit H-förmigem Verschluss" loading="lazy" decoding="async">
+          <figcaption>Hermès Clic H · Innenumfang und Schließe ansehen.</figcaption>
+        </figure>
+      </div>
+      <p>Die Bilder zeigen Modellbeispiele. Das aktuelle Angebot findest du im CAFANS-Katalog.</p>
+    </section>
+
+    <section aria-labelledby="leitfaden">
+      <h2 id="leitfaden">Ratgeber zur Produktauswahl</h2>
+      <div class="articles">
+        <article>
+          <h3>GTBuy Finds und Produktlinks prüfen</h3>
+          <p>Öffne den Produktlink und vergleiche Modellnummer, Farbe und ausgewählte Größe mit der Tabellenzeile. Bei Taobao-, Weidian- oder 1688-Produktlinks kann die zuerst angezeigte Variante von der gesuchten abweichen. Halte beim Preisvergleich den Zeitpunkt und die Währung fest. Prüfe Lagerbestand und Rückgabebedingungen beim konkreten Angebot.</p>
+        </article>
+        <article>
+          <h3>QC-Fotos und Größentabellen lesen</h3>
+          <p>Miss bei Sneakers die Einlegesohle eines gut passenden Paars und vergleiche die Länge in Zentimetern. Bei Hoodies helfen Brustweite, Schulterbreite und Rückenlänge. QC steht für Qualitätskontrolle. Bitte bei unklaren Details um Aufnahmen von Sohlenprofil, Nähten, Größenetikett oder Verschluss.</p>
+        </article>
+        <article>
+          <h3>Versandkosten nach Deutschland vergleichen</h3>
+          <p>Erfasse Artikelpreis, Inlandsversand, Servicegebühren und internationalen Versand als einzelne Posten. Vergleiche Paketgewicht und Volumengewicht nach den Angaben des Versanddienstes. Gib für Österreich und die Schweiz jeweils das eigene Zielland an und prüfe die Bedingungen für Zustellung und mögliche Einfuhrkosten.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="checkliste">
+      <h2 id="checkliste">Checkliste vor der Bestellung</h2>
+      <ul class="checklist">
+        <li><strong>Schuhe und Trikots:</strong> Prüfe bei Sneakern Modellcode und Einlegesohlenlänge, bei Trikots Brustumfang und Schnitt.</li>
+        <li><strong>Kleidung:</strong> Vergleiche bei Jacken Ärmellänge und Futter, bei Hosen und Shorts Bundweite und Innenbeinlänge.</li>
+        <li><strong>Sets und Unterwäsche:</strong> Prüfe die Maße beider Teile eines Sets und lies die Rückgabebedingungen für Unterwäsche.</li>
+        <li><strong>Accessoires:</strong> Bitte bei Schmuck um Detailbilder von Schließe und Oberfläche. Prüfe bei Taschen auch den Innenraum.</li>
+        <li><strong>Paket:</strong> Halte Versanddienst, Abrechnungsgewicht, Zuschläge und voraussichtliche Laufzeit für denselben Zielort fest.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Häufige Fragen</h2>
+      <details open>
+        <summary>Was ist ein GTBuy spreadsheet?</summary>
+        <p>Es ist eine Übersicht mit Produktlinks und, je nach Liste, Angaben zu Kategorien, Varianten oder QC-Fotos. Aktuelle Produktdaten prüfst du auf der jeweiligen Angebotsseite.</p>
+      </details>
+      <details>
+        <summary>Wohin führen die Links in diesem Leitfaden?</summary>
+        <p>Die Kategorien führen zu den jeweiligen CAFANS-Kategorieseiten. Die übrigen Links öffnen die CAFANS-Startseite.</p>
+      </details>
+      <details>
+        <summary>Kann ein QC-Foto die Echtheit eines Markenartikels bestätigen?</summary>
+        <p>Ein QC-Foto zeigt sichtbare Merkmale wie Nähte, Etiketten oder Oberflächen. Für eine Echtheitsprüfung brauchst du zusätzliche Belege, etwa einen nachvollziehbaren Herkunftsnachweis.</p>
+      </details>
+      <details>
+        <summary>Wie schätze ich die Versandkosten nach Deutschland?</summary>
+        <p>Vergleiche Angebote für dieselbe Zieladresse, dieselben Paketmaße und dasselbe Gewicht. Prüfe, welches Gewicht der Versanddienst abrechnet und welche Zuschläge in der Schätzung enthalten sind.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><a href="https://www.cafans.com">Zur CAFANS-Startseite</a></div>
+  </footer>
+</body>
+</html>
